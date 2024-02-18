@@ -3,8 +3,32 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer{
+@layer base{
     body{
         @apply text-whiteColor bg-primaryColor
+    }
+    section{
+        @apply pt-16 pb-4 md:pt-20;
+    }
+}
+
+@layer components{
+    .btn {
+        @apply inline-block px-8 py-3 text-sm text-center capitalize duration-500 ease-linear rounded-md cursor-pointer;
+    }
+    .btn-primary {
+        @apply text-blackColor bg-secondaryColor hover:opacity-75;
+    }
+}
+
+@layer utilities{
+    .home__title {
+        @apply text-4xl font-bold uppercase lg:text-6xl
+    }
+    .separator{
+        @apply w-28 h-[2px] bg-secondaryColor my-5
+    }
+    .paragraph{
+        @apply text-paragraphColor text-xs leading-5
     }
 }
