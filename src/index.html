@@ -22,8 +22,8 @@
         </a>
       </div>
 
-      <div id="navLinks" class="absolute top-0 left-0 hidden w-full bg-black border-b py-14 border-secondaryColor">
-        <ul class="flex flex-col items-center justify-center">
+      <div id="navLinks" class="absolute top-0 left-0 hidden w-full bg-black border-b py-14 border-secondaryColor md:block md:static md:py-0 md:border-none md:w-auto md:ml-auto">
+        <ul class="flex flex-col items-center justify-center gap-5 md:flex-row">
           <li>
             <a href="#" id="nav__link">Home</a>
            </li>
@@ -38,14 +38,14 @@
           </li>
         </ul>
 
-        <div id="crossIcon" class="absolute text-2xl top-4 right-4">
+        <div id="crossIcon" class="absolute text-2xl top-4 right-4 md:hidden">
           <i class="ri-close-circle-fill"></i>
         </div>
       </div>
 
       <div class="flex items-center gap-5">
-        <i class="text-xl cursor-pointer ri-moon-line"></i>
-        <div id="menuicon">
+        <i class="ml-5 text-xl cursor-pointer ri-moon-line"></i>
+        <div class="md:hidden" id="menuicon">
           <i class="text-xl cursor-pointer ri-menu-2-line"></i>
         </div>
       </div>
