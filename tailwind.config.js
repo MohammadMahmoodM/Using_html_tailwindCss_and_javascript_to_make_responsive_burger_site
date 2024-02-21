@@ -20,6 +20,14 @@ module.exports = {
         redColor: "#cc3433",
         darkColor: "#000",
         darkColorLight: "#171717"
+      },
+      keyframes: {
+        movee: {
+          "50%": {transform: 'translateY(-1rem)'}
+        }
+      },
+      animation:{
+        'myAnimation': 'movee 3s linear infinite'
       }
     },
     container: {
